@@ -57,7 +57,7 @@ const Home = () => {
 
   return (
     <div className='page'>
-      <h1>Crud App</h1>
+      <h1>Expense Tracker</h1>
       <div className='container'>
         <form onSubmit={onSubmitHandler}>
           <div>
@@ -68,6 +68,8 @@ const Home = () => {
               id='expenseTitle'
               value={inputs.expense}
               onChange={handleChange}
+              placeholder='Enter Title'
+
             />
           </div>
           <div>
@@ -78,6 +80,8 @@ const Home = () => {
               id='expensePrice'
               value={inputs.price}
               onChange={handleChange}
+              placeholder='Enter Price'
+
             />
           </div>
           <div>
